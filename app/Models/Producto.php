@@ -10,6 +10,6 @@ class Producto extends Model
     use HasFactory;
     public function tienda()
     {
-        return $this->belongsTo('App\Models\Tienda');
+        return $this->belongsTo(tienda::class, 'id_tienda');
     }
 }

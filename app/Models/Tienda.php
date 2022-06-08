@@ -10,6 +10,6 @@ class Tienda extends Model
     use HasFactory;
     public function productos()
     {
-        return $this->hasMany('App\Models\Producto');
+        return $this->hasMany(producto::class, 'id');
     }
 }
