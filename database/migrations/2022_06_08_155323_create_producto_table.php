@@ -18,6 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->integer('SKU')->unique(); // -> Es para darle un id unico a la tabla SKU
+            $table->string('descripcion');
             $table->integer('valor');
             $table->string('tienda');
             $table->string('imagen');
