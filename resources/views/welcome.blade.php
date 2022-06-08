@@ -46,22 +46,22 @@
                     </svg>
                 </div>
                 <table class="table table-striped table-hover">
-                    <thead>
+                    <thead class="bg-white">
                         <th>Nombre</th>
                         <th>SKU</th>
                         <th>Descripción</th>
                         <th>Valor</th>
                         <th>Tienda</th>
                     </thead>
-                    <tbody>
-                        @foreach($products as $product)
+                    <tbody class="bg-white">
+                        @foreach($productos as $producto)
 
                         <tr>
-                            <td>{{ $product->nombre }}</td>
-                            <td>{{ $product->SKU }}</td>
-                            <td>{{ $product->descripcion }}</td>
-                            <td>{{ $product->valor }}</td>
-                            <td>{{ $product->tienda }}</td>
+                            <td>{{ $producto->nombre }}</td>
+                            <td>{{ $producto->SKU }}</td>
+                            <td>{{ $producto->descripcion }}</td>
+                            <td>{{ $producto->valor }}</td>
+                            <td>{{ $producto->tienda }}</td>
                         </tr>
                         @endforeach
                     </tbody>
