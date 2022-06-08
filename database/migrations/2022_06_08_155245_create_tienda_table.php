@@ -14,8 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tienda', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id()->unique(); // -> Es para darle un id unico a la tabla
+            $table->string('nombre');
+            $table->date('fecha de apertura')->format('dd-mm-YYYY'); //Le doy el formato a la fecha de apertura
         });
     }
 
