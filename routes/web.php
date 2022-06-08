@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//Cambio de ruta para que muestre los productos de la tienda
+Route::get('/', 'App\Http\Controllers\RelacionController@index');
